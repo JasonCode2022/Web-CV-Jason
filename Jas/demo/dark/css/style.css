@@ -611,6 +611,7 @@ hr {
   background-repeat: no-repeat;
   position: relative;
   height: 700px;
+  width: 360px;
 }
 @media screen and (max-width: 768px) {
   .post-entry .post-image {
