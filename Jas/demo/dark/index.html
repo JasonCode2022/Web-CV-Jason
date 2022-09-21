@@ -4,6 +4,7 @@
 <!-- index.html  26 Nov 2019 03:50:59 GMT -->
 
 <head>
+   
    <!--Meta Tags-->
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -302,6 +303,7 @@
                <div class="col-md-8 col-md-offset-2 text-center heading">
                   <div class="header-page">
                      <h2>My Services</h2>
+
                      <span></span>
                   </div>
                   <span class="heading-meta-sub">SERVICES</span>
@@ -432,7 +434,7 @@
 
       <!-- Smart Interaction Section -->
       <section id="blog" class="bg-section bg-dark">
-         <div class="container">
+         <div id="Smart_Div" class="container">
             <div class="row">
                <div class="col-md-8 col-md-offset-2 text-center heading">
                   <div class="header-page">
@@ -443,33 +445,6 @@
                   </br>
                   <p>Where User Can Modify Existing Data</p>
                </div>
-            </div>
-            <div class="row">
-               <script>
-
-                  fetch('http://localhost:3000/index')
-
-                     .then(response => response.json())
-
-                     .then(json => console.log(json));
-
-               </script>
-
-               <div class="col-md-2">
-
-                  <div class="blog">
-
-                     <!-- <a href=""><img class="img-responsive" src="images/img-2.jpg" alt=""></a> -->
-                     <select>
-
-                        <option></option>
-
-                     </select>
-                     <a id="AddData" class="btn btn">Add Data</a>
-
-                  </div>
-               </div>
-
             </div>
          </div>
       </section>
@@ -609,7 +584,14 @@
    <script src="js/typed.min.js"></script>
    <!-- Custom JS -->
    <script src="js/custom.js"></script>
+   <script src="./smart.js"></script>
+   
+
+
 </body>
+
+
+
 
 <!-- index.html  26 Nov 2019 03:52:23 GMT -->
 

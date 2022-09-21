@@ -1,16 +1,34 @@
-const express = require('express')
-const app = express()
-const path = require('path');
-var cors = require('cors');
+var smart = document.getElementById('Smart_Div');
 
+var Original_Scontent = `
+<div class="row">
+<div class="col-md-3">
+   <div class="blog">
+   
+   <input id="input" placeholder="123-45-678"></input>
+  
+   <a id="AddData" class="btn btn">Add Data</a>
+      <select>
+         <option style="color:red" value="">Enter Data</option>
+         <option >test1</option>
+         <option >test2</option>
+      </select>
+      
+   </div>
+</div>
+</div>`
 
-app.use(cors());
-app.get('/index', function (req, res) {
+fetch('https://jsonplaceholder.typicode.com/users')
+   .then(response => response.json())
+   .then(json => {
+      json.forEach(element => {
+         var Scontent = Original_Scontent;
+         Scontent = Scontent.replace()
 
-  res.sendFile(path.join(__dirname, '/index.html/'));
-  // console.log("ewwwwwwwww");
-  console.log(__dirname)
-})
+         var smarttt = document.createElement('S_Div')
+         smarttt.innerHTML = Scontent
+         smarttt.className = "col-md-8 col-md-offset-2 text-center heading";
+         smart.appendChild(smarttt)
+      });
+   });
 
-app.listen(process.env.PORT || 3000, 
-	() => console.log("Server is running..."));
