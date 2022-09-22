@@ -6,7 +6,7 @@ var Original_Scontent = `
    <div class="blog">
    
    <input type="text" id="input" placeholder="Enter Data">
-   <a button id="AddData" class="btn btn" onclick="addstudent()">Add Data</a></button>
+   <a button id="AddData" class="btn btn" onclick="Add_Data()">Add Data</a></button>
   
  
       <select style="color:black" value=""Show Data>
@@ -20,7 +20,7 @@ var Original_Scontent = `
 </div>
 </div>`
 
-fetch(' https://whispering-refuge-18728.herokuapp.com/')
+fetch('http://localhost:3000/services')
    .then(response => response.json())
    .then(json => {
       json.Services.forEach(element => {
