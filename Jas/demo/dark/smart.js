@@ -12,6 +12,7 @@ var Original_Scontent = `
       <select style="color:black" value=""Show Data>
          <option value="" disabled selected hidden>Show Data</option>
          <option >test1</option>
+         <option >Description</option>
          
       </select>
       
@@ -19,12 +20,13 @@ var Original_Scontent = `
 </div>
 </div>`
 
-fetch('https://jsonplaceholder.typicode.com/users')
+fetch(' https://whispering-refuge-18728.herokuapp.com/')
    .then(response => response.json())
    .then(json => {
-      json.forEach(element => {
+      json.Services.forEach(element => {
          var Scontent = Original_Scontent;
-         Scontent = Scontent.replace('test1',element.name)
+         Scontent = Scontent.replace('test1',element.A)
+         Scontent = Scontent.replace('Description',element.B)
 
          var smarttt = document.createElement('S_Div')
          smarttt.innerHTML = Scontent
