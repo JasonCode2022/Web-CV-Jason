@@ -5,14 +5,15 @@ var Original_Scontent = `
 <div class="col-md-3">
    <div class="blog">
    
-   <input type="text" id="input" placeholder="Enter Data">
+   <input style="color:black" type="text" id="input" placeholder="Enter Data">
    <a button id="AddData" class="btn btn" onclick="Add_Data()">Add Data</a></button>
   
  
       <select style="color:black" value=""Show Data>
+
          <option value="" disabled selected hidden>Show Data</option>
-         <option >test1</option>
-         <option >Description</option>
+         <option id="Fir" >test1</option>
+         <option id="Sec" >Description</option>
          
       </select>
       
